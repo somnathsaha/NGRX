@@ -3,6 +3,8 @@ import { PostState } from './posts.state';
 
 export const selectPostFeature = createFeatureSelector<PostState>('posts');
 
-export const getPost = createSelector(selectPostFeature, (state: PostState) => {
+export const getPost = createSelector(selectPostFeature, (state: PostState) =>
+{
+  // cons
   return state.Posts;
 });

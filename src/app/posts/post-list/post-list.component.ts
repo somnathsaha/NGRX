@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { AppState } from 'src/app/Store/app.state';
 import { Post } from 'src/app/model/post.model';
-import { getPost } from './state/post.selector';
+import { getPost } from '../state/post.selector';
 
 @Component({
   selector: 'app-post-list',
