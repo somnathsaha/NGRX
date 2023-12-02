@@ -29,9 +29,8 @@ export class AddPostComponent implements OnInit {
 
   onAddPost() {
     const postData: Post = {
-      description: this.formdata.value.title ?? 'Default Title',
-      title: this.formdata.value.description ?? 'Default Description',
-      id: Math.random(),
+      description: this.formdata.value.description ?? 'Default Description',
+      title: this.formdata.value.title ?? 'Default Title',
     };
 
     this.store.dispatch(POST_DATA({ postData }));
