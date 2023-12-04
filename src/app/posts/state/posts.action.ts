@@ -8,5 +8,10 @@ export const POST_DATA = createAction(
 
 export const UPDATE_DATA = createAction(
   '[Post Component] Update Data',
-  props<{ updatedData: Post }>()
+  props<{ updatedPost: Post }>()
+);
+
+export const DELETE_DATA = createAction(
+  '[Delete] Delete Data',
+  props<{ id: number }>()
 );

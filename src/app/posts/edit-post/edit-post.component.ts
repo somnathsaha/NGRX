@@ -55,7 +55,7 @@ export class EditPostComponent implements OnInit, OnDestroy {
       title: this.formGroup.value.title,
       description: this.formGroup.value.description,
     };
-    this.store.dispatch(UPDATE_DATA({ updatedData: updatedPost }));
+    this.store.dispatch(UPDATE_DATA({ updatedPost }));
     this.router.navigateByUrl('/posts');
   }
 
